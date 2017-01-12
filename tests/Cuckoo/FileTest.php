@@ -16,11 +16,11 @@ class FileTest extends \PHPUnit_Framework_TestCase
     private $_fileStub;
 
     public function setUp() {
-        $this->_file = new File(apiKey);
+        $this->_file = new File(apiUrl);
 
         $this->_fileStub = $this->getMock('\Cuckoo\File',
                                           array('add', 'status'),
-                                          array(apiKey));
+                                          array(apiUrl));
     }
 
     public function tearDown() {

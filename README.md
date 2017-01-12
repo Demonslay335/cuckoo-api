@@ -24,9 +24,9 @@ composer update
 <?php
 require_once('vendors/autoload.php');
 
-$apiKey = 'your_api_key';
+$apiUrl = 'your_cuckoo_api_url';
 
-$file = new Cuckoo\File($apiKey);
+$file = new Cuckoo\File($apiUrl);
 $resp = $file->scan('path/to/executable.exe');
 
 var_dump($resp);
