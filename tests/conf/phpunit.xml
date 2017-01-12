@@ -1,0 +1,26 @@
+<phpunit bootstrap="../bootstrap.php"
+         colors="true"
+         stopOnError="true"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         convertErrorsToExceptions="false"
+         verbose="true"
+    >
+
+    <testsuites>
+        <testsuite name="Cuckoo API wrapper Test Suite" >
+            <directory>../src/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+    </filter>
+
+    <php>
+        <const name="apiKey" value="fakeKey"/>
+    </php>
+</phpunit>

@@ -1,0 +1,31 @@
+{
+    "name": "demonslay335/cuckoo-api",
+    "description": "Cuckoo Sandbox PHP Wrapper",
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["cuckoo", "sandbox", "api", "php", "wrapper", "security"],
+    "homepage": "https://github.com/demonslay335/cuckoo-api",
+    "authors": [
+        {
+            "name": "Michael Gillespie",
+            "email": "demonslay335@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.2.0",
+    },
+    "require-dev": {
+       "phpunit/phpunit": ">=4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Cuckoo": "src/",
+            "Tests\\Cuckoo": "tests/"
+        }
+    },
+    "config": {
+        "vendor-dir" : "vendors",
+        "vendor-bin" : "vendors/bin"
+    }
+}
